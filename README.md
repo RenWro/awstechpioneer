@@ -79,6 +79,11 @@ Students must submit the following evidence upon project completion:
 ## 🖼 **Serverless Architecture Diagram**  
 <img width="590" height="571" alt="Captura de Tela 2025-12-23 às 09 21 56" src="https://github.com/user-attachments/assets/d5e0e431-80be-411e-9bc6-352aaff1d165" />
 
+---  
+
+## 🖼 **X-Ray Tracesm** 
+<img width="662" height="793" alt="image" src="https://github.com/user-attachments/assets/670c1c57-ae7a-4d50-983b-9763af2ca9bd" />
+
 ---
 
 🌟 **Project proposed = by:**  
