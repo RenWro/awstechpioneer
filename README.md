@@ -86,6 +86,6 @@ Students must submit the following evidence upon project completion:
 
 ---
 
-🌟 **Project proposed = by:**  
+🌟 **Project proposed by:**  
 **Mukhtar Muhammad Lawan, PhD**  
 *AWS Certified Solutions Architect*
