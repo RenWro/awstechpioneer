@@ -1,0 +1,16 @@
+S3 BUCKET INFORMATION 
+===================== 
+Bucket Name : order - data -[ YOUR - STUDENT - ID ] 
+Bucket ARN : arn : aws : s3 ::: order - data -[ YOUR - STUDENT - ID 
+Region : us - east -1 
+Creation Date : [ Date of creation ] 
+Folders Created : 
+- orders / 
+- orders / processed / 
+- orders / failed / 
+- orders / pending / 
+- logs / 
+- backup / 
+Encryption : Enabled ( SSE - S3 ) 
+Public Access : Blocked 
+Lifecycle Rule : Delete after 30 days ( optional )

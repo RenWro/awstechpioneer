@@ -1,0 +1,25 @@
+STEP FUNCTIONS INFORMATION 
+========================== 
+
+State Machine Name : OrderProcessingWorkflow 
+State Machine ARN : arn:aws:states:us-east-1:343312638036:stateMachine:OrderProcessingWorkflow 
+Type : Standard 
+Creation Date : 2025-12-22 
+
+States : 
+1. ValidateOrder - Calls validate-order Lambda 
+2. ProcessPayment - Calls process-payment Lambda 
+3. PaymentDecision - Choice state based on payment_status 
+4. SaveToS3 - Calls save-to-s3 Lambda ( success path ) 
+5. OrderProcessedSuccessfully - Succeed state 
+6. PaymentFailed - Fail state for payment failures 
+7. ValidationFailed - Fail state for validation errors 
+
+Error Handling : 
+- ValidateOrder catches States.ALL -> ValidationFailed 
+- ProcessPayment errors -> Propagate to parent 
+
+Test Results : 
+- Successful execution : Yes 
+- Failure execution : Yes 
+- S3 files created : 2 files in orders/processed/

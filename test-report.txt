@@ -1,0 +1,40 @@
+TESTING REPORT
+==============
+Date : 2025-12-22
+Tester : [Seu Nome]
+
+Test Cases Executed :
+1. Valid Order with Successful Payment
+- Status : PASS
+- Execution ID : fdaad464-1d72-4622-8a8b-c2bfe7c5a528
+- Notes : All states executed successfully; verified file creation in S3.
+
+2. Valid Order with Failed Payment
+- Status : PASS
+- Execution ID : 729e2ccc-fd3d-4830-be54-3a0661934e87
+- Notes : Workflow correctly routed to PaymentFailed state based on FAILED status.
+
+3. Invalid Order Data
+- Status : PASS
+- Execution ID : 93752884-2ccd-4a65-8e6a-6d6baba00d8a
+- Notes : Validation failure caught as expected; no further processing occurred.
+
+4. Edge Cases
+- Status : PASS
+- Notes : Handled variations in input data and field availability in JSONata mode.
+
+Monitoring Setup :
+- CloudWatch Dashboard : Created Yes
+- Dashboard Name : Serverless-Order-Monitoring
+- Widgets Created : 3
+- Alarms Configured : 2
+
+Performance Observations :
+- Average Lambda execution time : < 1 second
+- Step Functions workflow duration : ~1.5 seconds
+- S3 write performance : Immediate consistency observed
+
+Overall Assessment :
+- Application Stability : Excellent
+- Ready for Production : Yes
+- Free Tier Compliance : Yes
